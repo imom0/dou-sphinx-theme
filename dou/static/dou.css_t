@@ -1,0 +1,27 @@
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.article {
+  width: 640px;
+  padding: 0;
+  float: left;
+}
+.aside {
+  width: 250px;
+  float: right;
+  padding: 4px 9px;
+  background: #fff6ed;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+

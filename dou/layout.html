@@ -1,0 +1,55 @@
+{% extends "basic/layout.html" %}
+
+{% block header %}
+  <div class="wrapper">
+	<div class="header">
+	  {% block headertitle %}
+	  <div class="headertitle"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></div>
+	  {% endblock headertitle %}
+	  <div class="rel">
+		{% for rellink in rellinks|reverse %}
+		<a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}" {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+		{% if not loop.last %}{{ reldelim2 }}{% endif %}
+		{% endfor %}
+	  </div>
+	</div>
+  </div>
+{% endblock header %}
+
+{% block content %}
+{% block sidebar1 %}{% endblock %}
+  <div class="wrapper clearfix">
+	<div id="content">
+	  <div class="article">
+		{% block document %}
+		{{ super() }}
+		{% endblock document %}
+	  </div>
+	  <div class="aside">
+		{% block sidebar2 %}
+		{{ super() }}
+		{% endblock sidebar2 %}
+	  </div>
+	</div>
+  </div>
+{% endblock content %}
+
+{% block footer %}
+  <div class="wrapper">
+	<div class="footer">
+
+	  <div class="right">
+		{{ super() }}
+	  </div>
+	  <div class="left">
+		{%- if show_source and has_source and sourcename %}
+		  <br/>
+		  <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">{{ _('Show Source') }}</a>
+		{%- endif %}
+	  </div>
+	</div>
+  </div>
+{% endblock %}
+
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
