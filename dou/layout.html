@@ -29,7 +29,6 @@
 	  <div class="article pull-left">
 		{% block document %}
 		{{ super() }}
-
 		{% endblock document %}
 	  </div>
 	  <div class="aside pull-right">
@@ -51,5 +50,6 @@
   </div>
 {% endblock %}
 
+{% block sidebarlogo %}{{ shorttitle|e }}{% endblock %}
 {% block relbar1 %}{% endblock %}
 {% block relbar2 %}{% endblock %}
