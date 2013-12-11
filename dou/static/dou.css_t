@@ -1,3 +1,63 @@
+body {
+  margin: 0;
+  font: 12px Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #444;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+a {
+  text-decoration: none;
+  color: #37a;
+}
+a:visited {
+  color: #669;
+}
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.nav {
+  height: 28px;
+  background-color: #545652;
+}
+.header-wrapper {
+  background: #edf4ed;
+  margin-bottom: 50px;
+}
+.header {
+  height: 70px;
+}
+.header a {
+  color: #072;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.header a:active,
+.header a:hover {
+  background-color: #072;
+  color: #fff;
+}
+.pageheader {
+  float: left;
+  margin-top: 25px;
+}
+.search {
+  margin-top: 12px;
+}
+.search h3 {
+  display: none;
+}
+.search .searchtip {
+  display: none;
+}
 .wrapper {
   width: 960px;
   margin: 0 auto;
@@ -5,13 +65,24 @@
 .article {
   width: 640px;
   padding: 0;
-  float: left;
 }
 .aside {
   width: 250px;
-  float: right;
-  padding: 4px 9px;
-  background: #fff6ed;
+}
+.aside h3,
+.aside h4 {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 5px 0;
+  line-height: 2;
+  font-weight: normal;
+}
+.sphinxsidebar {
+  background-color: #fff6ed;
+  padding: 1px;
+}
+.sphinxsidebar .sphinxsidebarwrapper {
+  margin: 16px;
 }
 .clearfix {
   zoom: 1;
@@ -23,5 +94,16 @@
 }
 .clearfix:after {
   clear: both;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.footer-wrapper {
+  margin-top: 30px;
+  padding: 5px 0;
+  border-top: 1px dashed #ddd;
 }
 
