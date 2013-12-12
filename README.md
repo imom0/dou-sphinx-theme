@@ -10,9 +10,6 @@ dou-sphinx-theme
 2. 修改 `conf.py` 中的 `html_theme` `html_theme_path`
 
 ```python
-
-    sys.path.append(os.path.abspath('_themes'))
-    
-    html_theme_path = ['_themes']
-    html_theme = 'dou'
+html_theme_path = ['_themes']
+html_theme = 'dou'
 ```
