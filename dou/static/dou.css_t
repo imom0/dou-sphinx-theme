@@ -15,12 +15,14 @@ a {
   text-decoration: none;
   color: #37a;
 }
-a:hover {
-  color: #fff;
-  background: #37a;
-}
+a:link,
 a:visited {
   color: #669;
+}
+a:hover,
+a:active {
+  color: #fff;
+  background: #37a;
 }
 ul {
   list-style-type: none;
