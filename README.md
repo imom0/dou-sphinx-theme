@@ -3,6 +3,17 @@ dou-sphinx-theme
 
 ---
 
+Setup
+-----
+
+1. Copy directory `dou` to `docs/_themes/` under your own project.
+2. Modify `html_theme` and `html_theme_path` in `conf.py`
+
+```python
+html_theme_path = ['_themes']
+html_theme = 'dou'
+```
+
 使用
 ----
 
